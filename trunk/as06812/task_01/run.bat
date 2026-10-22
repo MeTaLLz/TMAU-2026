@@ -6,15 +6,15 @@ cd /d "%~dp0"
 set BUILD_DIR=build
 set EXE_NAME=ControlModels.exe
 set PLOT_SCRIPT=src/plot_results.py
+set SRC_DIR=src
 
 echo ===================================================
 echo   Build and Run Simulation (Variant 2)
 echo ===================================================
 
 :: Проверка наличия CMakeLists.txt
-if not exist CMakeLists.txt (
-    echo [ERROR] CMakeLists.txt not found in current directory.
-    echo Please run this script from the project root.
+if not exist %SRC_DIR%\CMakeLists.txt (
+    echo [ERROR] CMakeLists.txt not found in '%SRC_DIR%' directory.
     pause
     exit /b 1
 )
@@ -30,7 +30,7 @@ cd %BUILD_DIR%
 :: Конфигурация CMake
 echo.
 echo [STEP 1/3] Configuring project via CMake...
-cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake ..\%SRC_DIR% -DCMAKE_BUILD_TYPE=Release
 if errorlevel 1 (
     echo [ERROR] CMake configuration failed.
     cd ..
