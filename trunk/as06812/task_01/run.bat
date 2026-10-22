@@ -4,7 +4,7 @@
 cd /d "%~dp0"
 
 set BUILD_DIR=build
-set EXE_NAME=ControlModels.exe
+set EXE_NAME=as06812_lab1.exe
 set PLOT_SCRIPT=src/plot_results.py
 set SRC_DIR=src
 

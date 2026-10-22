@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
-project(ControlModels)
+project(as06812_lab1)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(ControlModels 
+add_executable(as06812_lab1 
     src/Main.cpp 
     src/InputSignal.cpp
     src/Model_1_2.cpp
