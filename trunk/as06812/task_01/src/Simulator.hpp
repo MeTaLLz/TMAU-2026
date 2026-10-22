@@ -10,5 +10,5 @@ private:
     
 public:
     explicit Simulator(int steps);
-    void run(Model& model, const std::string& modelName, const InputSignal& signal);
+    void run(Model& model, const std::string& modelName, const InputSignal& signal) const;
 };

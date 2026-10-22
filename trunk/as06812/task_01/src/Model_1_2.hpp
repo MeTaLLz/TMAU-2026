@@ -5,7 +5,8 @@
 class Model_1_2 : public Model 
 {
 private:
-    double a, b;
+    double a;
+    double b;
     int k;
     std::queue<double> u_history;
 

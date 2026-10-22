@@ -96,8 +96,7 @@ int main()
             break;
         }
         default:
-            cerr << "[Error] Unknown model choice: " << choice << "\n";
-            return 1;
+            break;
     }
 
     return 0;

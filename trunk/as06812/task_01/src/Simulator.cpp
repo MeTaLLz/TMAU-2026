@@ -7,7 +7,7 @@ using namespace std;
 
 Simulator::Simulator(int steps) : steps(steps) {}
 
-void Simulator::run(Model& model, const string& modelName, const InputSignal& signal) 
+void Simulator::run(Model& model, const string& modelName, const InputSignal& signal) const
 {
     model.resetState();
     
